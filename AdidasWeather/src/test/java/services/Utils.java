@@ -7,8 +7,11 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class Utils {
-	public static void main(String[] args)  {
-		File file = new File("/AdidasWeather/src/test/java/Configs/TestData.properties");
+	public static String WEATHERURL;
+	public static String APP_ID;
+	 static {
+		System.out.println("testing");
+		File file = new File("TestData.properties");
 
 		FileInputStream fileInput = null;
 		try {
@@ -24,6 +27,9 @@ public class Utils {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		
+		WEATHERURL =(String) prop.get("WeatherURL");
+		APP_ID =(String) prop.get("AppID");
 		
 	}
 }
