@@ -1,0 +1,15 @@
+//Technical Specification
+
+Framework used = BDD and Data driven (Hybrid framework)
+Tool used = Cucumber and related plugin.
+IDE = Eclipse Mars.2
+Language used = Core Java and gherkin(for cucumber)
+Java Library used = Rest Assured to test RESTful API's
+
+
+//Setup needed
+
+
+
+
+//Steps to execute

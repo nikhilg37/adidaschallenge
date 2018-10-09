@@ -15,6 +15,7 @@ import cucumber.api.java.en.When;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
+import services.Utils;
 
 public class TempStepDefinitionsForCityID {
 	
@@ -23,15 +24,13 @@ public class TempStepDefinitionsForCityID {
 	private ValidatableResponse json;
 	private RequestSpecification request;
 
-	private String ENDPOINT_GET_WEATHER = "http://api.openweathermap.org/data/2.5/weather";
-	private static String APPID ="57068c7d8e950d3784dd9c16f904d2a4";
 
 	@Given("a CityId exists with an id of (.*)")
 	public void city_exists_with_an_name_of(String id){
 
 		Map<String, String> parametersMap = new HashMap();
 		parametersMap.put("id", id);
-		parametersMap.put("appid", APPID);
+		parametersMap.put("appid", Utils.APP_ID);
 
 		request = given().params(parametersMap);
 	}
@@ -39,7 +38,7 @@ public class TempStepDefinitionsForCityID {
 
 	@When("a user retrieves the temprature by id")
 	public void a_user_retrieves_the_temprature_by_name(){
-		response = request.when().get(ENDPOINT_GET_WEATHER);
+		response = request.when().get(Utils.WEATHERURL);
 		System.out.println("response: " + response.prettyPrint());
 	
 	}

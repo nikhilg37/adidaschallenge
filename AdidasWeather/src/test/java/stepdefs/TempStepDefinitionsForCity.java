@@ -18,7 +18,7 @@ import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
 import services.Utils;
 
-public class TempStepDefinitions {
+public class TempStepDefinitionsForCity {
 
 	private Response response;
 	private ValidatableResponse json;
