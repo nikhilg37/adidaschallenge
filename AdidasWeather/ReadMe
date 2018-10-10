@@ -7,6 +7,7 @@
 5. Java Library = Rest Assured to test RESTful API's
 6. Build tool = Maven
 7. URL from where API is fetched = http://api.openweathermap.org/data/2.5/weather
+8. Junit = testing framework
 
 
 //Setup needed
