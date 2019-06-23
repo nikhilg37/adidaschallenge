@@ -27,3 +27,4 @@
 5. Check if the package name and path specified are correct.
 6. Right click on the project or click on "run" button and run the application as "Junit".
 7. Now, the program gets executed, results are validated and the output is shown in console.
+8. test
